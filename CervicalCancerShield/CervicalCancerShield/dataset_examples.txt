@@ -1,0 +1,115 @@
+===== REAL DATASET EXAMPLES =====
+
+This file contains real examples extracted from the cervical cancer dataset.
+These examples represent actual patient data and the corresponding biopsy results.
+
+===== DATA DETAILS =====
+Dataset: Cervical Cancer Risk Factors Dataset
+Target Variable: Biopsy (0 = negative, 1 = positive)
+Features Extracted: Age, Number of sexual partners, First sexual intercourse, Num of pregnancies, Smokes, Hormonal Contraceptives
+
+===== EXAMPLE NEGATIVE BIOPSY CASES (Biopsy = 0) =====
+
+Patient 1:
+- Age: 18
+- Number of sexual partners: 4
+- Age at first sexual intercourse: 15
+- Number of pregnancies: 1
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 0 (No)
+- Biopsy Result: 0 (Negative)
+
+Patient 2:
+- Age: 34
+- Number of sexual partners: 1
+- Age at first sexual intercourse: N/A (Missing in dataset)
+- Number of pregnancies: 1
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 0 (No)
+- Biopsy Result: 0 (Negative)
+
+Patient 3:
+- Age: 46
+- Number of sexual partners: 3
+- Age at first sexual intercourse: 21
+- Number of pregnancies: 4
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 1 (Yes)
+- Biopsy Result: 0 (Negative)
+
+Patient 4:
+- Age: 42
+- Number of sexual partners: 3
+- Age at first sexual intercourse: 23
+- Number of pregnancies: 2
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 0 (No)
+- Biopsy Result: 0 (Negative)
+
+Patient 5:
+- Age: 36
+- Number of sexual partners: 2
+- Age at first sexual intercourse: 20
+- Number of pregnancies: 2
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 1 (Yes)
+- Biopsy Result: 0 (Negative)
+
+===== EXAMPLE POSITIVE BIOPSY CASES (Biopsy = 1) =====
+
+Patient 6:
+- Age: 52
+- Number of sexual partners: 5
+- Age at first sexual intercourse: 16
+- Number of pregnancies: 4
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 1 (Yes)
+- Biopsy Result: 1 (Positive)
+
+Patient 7:
+- Age: 51
+- Number of sexual partners: 3
+- Age at first sexual intercourse: 17
+- Number of pregnancies: 6
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 0 (No)
+- Biopsy Result: 1 (Positive)
+
+Patient 8:
+- Age: 45
+- Number of sexual partners: 1
+- Age at first sexual intercourse: 20
+- Number of pregnancies: 5
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 0 (No)
+- Biopsy Result: 1 (Positive)
+
+Patient 9:
+- Age: 35
+- Number of sexual partners: 5
+- Age at first sexual intercourse: 11
+- Number of pregnancies: N/A (Missing in dataset)
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 1 (Yes)
+- Biopsy Result: 1 (Positive)
+
+Patient 10:
+- Age: 44
+- Number of sexual partners: 3
+- Age at first sexual intercourse: 15
+- Number of pregnancies: N/A (Missing in dataset)
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 0 (No)
+- Biopsy Result: 1 (Positive)
+
+===== OBSERVED PATTERNS =====
+
+From the dataset, several patterns emerge that correspond to higher cervical cancer risk:
+
+1. Higher age (especially above 40)
+2. Earlier age at first sexual intercourse (below 17)
+3. Higher number of pregnancies (4 or more)
+4. Smoking
+5. Not using hormonal contraceptives (which appear to have a protective effect)
+
+These patterns align with known medical risk factors for cervical cancer and are captured by the prediction model.

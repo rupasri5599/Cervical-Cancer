@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervical -Cancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cervical Cancer</h2>
+        <form id="biopsyForm">
+            <input type="number" id="age" placeholder="Age" required><br>
+            <input type="number" id="partners" placeholder="Number of Sexual Partners" required><br>
+            <input type="number" id="pregnancies" placeholder="Number of Pregnancies" required><br>
+            <input type="number" id="smokes" placeholder="Smokes (0: No, 1: Yes)" min="0" max="1" required><br>
+            <input type="number" id="contraceptives" placeholder="Hormonal Contraceptives (0: No, 1: Yes)" min="0" max="1" required><br>
+            <button type="button" onclick="predictBiopsy()">Predict Biopsy</button>
+        </form>
+        <h3>Prediction Result: <span id="result">-</span></h3>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

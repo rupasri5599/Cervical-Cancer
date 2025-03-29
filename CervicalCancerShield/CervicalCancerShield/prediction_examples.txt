@@ -1,0 +1,111 @@
+===== CERVICAL CANCER RISK PREDICTION EXAMPLES =====
+
+These example cases can be used to verify the model's prediction behavior for different risk levels.
+The input values are realistic cases that typically produce low, medium, and high risk predictions.
+
+===== LOW RISK EXAMPLES =====
+
+Example 1:
+Age: 25
+Number of sexual partners: 1
+Age at first sexual intercourse: 20
+Number of pregnancies: 0
+Smokes: No
+Uses hormonal contraceptives: Yes
+Predicted Risk: 10-15%
+
+Example 2:
+Age: 30
+Number of sexual partners: 1
+Age at first sexual intercourse: 25
+Number of pregnancies: 1
+Smokes: No
+Uses hormonal contraceptives: Yes
+Predicted Risk: 15-20%
+
+Example 3:
+Age: 28
+Number of sexual partners: 2
+Age at first sexual intercourse: 21
+Number of pregnancies: 0
+Smokes: No
+Uses hormonal contraceptives: Yes
+Predicted Risk: 20-25%
+
+===== MEDIUM RISK EXAMPLES =====
+
+Example 1:
+Age: 35
+Number of sexual partners: 4
+Age at first sexual intercourse: 16
+Number of pregnancies: 2
+Smokes: Yes
+Uses hormonal contraceptives: No
+Predicted Risk: 30-40%
+
+Example 2:
+Age: 38
+Number of sexual partners: 3
+Age at first sexual intercourse: 17
+Number of pregnancies: 3
+Smokes: No
+Uses hormonal contraceptives: No
+Predicted Risk: 40-45%
+
+Example 3:
+Age: 42
+Number of sexual partners: 3
+Age at first sexual intercourse: 18
+Number of pregnancies: 2
+Smokes: Yes
+Uses hormonal contraceptives: Yes
+Predicted Risk: 45-50%
+
+===== HIGH RISK EXAMPLES =====
+
+Example 1:
+Age: 45
+Number of sexual partners: 6
+Age at first sexual intercourse: 14
+Number of pregnancies: 4
+Smokes: Yes
+Uses hormonal contraceptives: No
+Predicted Risk: 55-65%
+
+Example 2:
+Age: 48
+Number of sexual partners: 8
+Age at first sexual intercourse: 14
+Number of pregnancies: 5
+Smokes: Yes
+Uses hormonal contraceptives: No
+Predicted Risk: 70-80%
+
+Example 3:
+Age: 52
+Number of sexual partners: 5
+Age at first sexual intercourse: 15
+Number of pregnancies: 6
+Smokes: Yes
+Uses hormonal contraceptives: No
+Predicted Risk: 80-90%
+
+===== RISK LEVEL THRESHOLDS =====
+
+Low Risk: ≤25% probability
+Medium Risk: 25-50% probability
+High Risk: >50% probability
+
+===== NOTES =====
+
+These examples are based on patterns observed in the cervical cancer dataset. The risk level correlates with the number of risk factors present:
+
+Major risk factors (contribute more to high risk):
+1. Higher age (especially >40)
+2. Higher number of sexual partners
+3. Early age of first sexual intercourse
+4. Smoking
+5. Multiple pregnancies
+6. Not using hormonal contraceptives
+
+Different combinations of these factors result in different risk levels. The model's prediction is based on patterns learned from the dataset, and these examples are representative of typical cases in each risk category.

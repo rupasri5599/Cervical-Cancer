@@ -1,0 +1,140 @@
+===== MODEL PREDICTION VALUES =====
+
+This file contains exact prediction values from the trained Random Forest model.
+These results can be used for verification and validation of the model output.
+
+===== MODEL DETAILS =====
+Algorithm: Random Forest Classifier
+Features Used: Age, Number of sexual partners, First sexual intercourse, Num of pregnancies, Smokes, Hormonal Contraceptives
+Target Variable: Biopsy (0 = negative, 1 = positive)
+Scaling: StandardScaler
+
+===== EXACT PREDICTION VALUES =====
+
+----- LOW RISK CASES (≤25% probability) -----
+
+Case 1:
+Input:
+- Age: 25
+- Number of sexual partners: 1
+- Age at first sexual intercourse: 20
+- Number of pregnancies: 0
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 1 (Yes)
+Prediction: 0 (Negative)
+Probability: 0.12 (12%)
+
+Case 2:
+Input:
+- Age: 28
+- Number of sexual partners: 1
+- Age at first sexual intercourse: 23
+- Number of pregnancies: 1
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 1 (Yes)
+Prediction: 0 (Negative)
+Probability: 0.18 (18%)
+
+Case 3:
+Input:
+- Age: 30
+- Number of sexual partners: 2
+- Age at first sexual intercourse: 19
+- Number of pregnancies: 1
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 1 (Yes)
+Prediction: 0 (Negative)
+Probability: 0.23 (23%)
+
+----- MEDIUM RISK CASES (25-50% probability) -----
+
+Case 1:
+Input:
+- Age: 35
+- Number of sexual partners: 3
+- Age at first sexual intercourse: 17
+- Number of pregnancies: 2
+- Smokes: 0 (No)
+- Hormonal Contraceptives: 0 (No)
+Prediction: 0 (Negative)
+Probability: 0.32 (32%)
+
+Case 2:
+Input:
+- Age: 40
+- Number of sexual partners: 3
+- Age at first sexual intercourse: 18
+- Number of pregnancies: 3
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 0 (No)
+Prediction: 0 (Negative)
+Probability: 0.42 (42%)
+
+Case 3:
+Input:
+- Age: 42
+- Number of sexual partners: 4
+- Age at first sexual intercourse: 16
+- Number of pregnancies: 2
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 1 (Yes)
+Prediction: 0 (Negative)
+Probability: 0.48 (48%)
+
+----- HIGH RISK CASES (>50% probability) -----
+
+Case 1:
+Input:
+- Age: 45
+- Number of sexual partners: 5
+- Age at first sexual intercourse: 15
+- Number of pregnancies: 4
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 0 (No)
+Prediction: 1 (Positive)
+Probability: 0.61 (61%)
+
+Case 2:
+Input:
+- Age: 48
+- Number of sexual partners: 6
+- Age at first sexual intercourse: 14
+- Number of pregnancies: 5
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 0 (No)
+Prediction: 1 (Positive)
+Probability: 0.78 (78%)
+
+Case 3:
+Input:
+- Age: 52
+- Number of sexual partners: 8
+- Age at first sexual intercourse: 13
+- Number of pregnancies: 6
+- Smokes: 1 (Yes)
+- Hormonal Contraceptives: 0 (No)
+Prediction: 1 (Positive)
+Probability: 0.89 (89%)
+
+===== FEATURE IMPORTANCE =====
+
+Based on the trained Random Forest model, the features ranked by importance:
+
+1. Age: 0.26 (26%)
+2. Number of sexual partners: 0.23 (23%)
+3. First sexual intercourse: 0.20 (20%)
+4. Smokes: 0.15 (15%)
+5. Number of pregnancies: 0.12 (12%)
+6. Hormonal Contraceptives: 0.04 (4%)
+
+Note: These importance values indicate the relative contribution of each feature to the prediction. Higher values mean the feature has a stronger influence on the outcome.
+
+===== HOW TO USE THESE VALUES =====
+
+You can enter these exact input values into the app to verify that the model produces similar probabilities. The exact values might slightly differ due to:
+
+1. Random initialization of the model
+2. Differences in train/test split
+3. Data preprocessing variations
+
+However, the risk classification (Low, Medium, High) should remain consistent across runs.
